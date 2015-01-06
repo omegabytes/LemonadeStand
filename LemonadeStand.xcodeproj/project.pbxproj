@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD26A3221A58913B00202FCD /* IngredientsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26A3211A58913B00202FCD /* IngredientsClass.swift */; };
 		DDD636301A5387DD00305C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD6362F1A5387DD00305C3D /* AppDelegate.swift */; };
 		DDD636321A5387DD00305C3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD636311A5387DD00305C3D /* ViewController.swift */; };
 		DDD636351A5387DE00305C3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD636331A5387DE00305C3D /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD26A3211A58913B00202FCD /* IngredientsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsClass.swift; sourceTree = "<group>"; };
 		DDD6362A1A5387DD00305C3D /* LemonadeStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD6362E1A5387DD00305C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDD6362F1A5387DD00305C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				DDD6362F1A5387DD00305C3D /* AppDelegate.swift */,
 				DDD636311A5387DD00305C3D /* ViewController.swift */,
+				DD26A3211A58913B00202FCD /* IngredientsClass.swift */,
 				DDD636331A5387DE00305C3D /* Main.storyboard */,
 				DDD636361A5387DE00305C3D /* Images.xcassets */,
 				DDD636381A5387DE00305C3D /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDD636321A5387DD00305C3D /* ViewController.swift in Sources */,
+				DD26A3221A58913B00202FCD /* IngredientsClass.swift in Sources */,
 				DDD636301A5387DD00305C3D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +411,7 @@
 				DDD6364B1A5387DE00305C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDD6364C1A5387DE00305C3D /* Build configuration list for PBXNativeTarget "LemonadeStandTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				DDD6364E1A5387DE00305C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

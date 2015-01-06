@@ -58,25 +58,16 @@
                                 <color key="textColor" red="0.0" green="0.75267269736842102" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="179" y="20" width="205" height="21"/>
+                                    <rect key="frame" x="155" y="28" width="205" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Lemon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krW-DN-b9z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Lemon(s)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krW-DN-b9z">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="179" y="49" width="205" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Ice Cube(s)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxW-Xj-Yfw">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="179" y="78" width="205" height="21"/>
+                                    <rect key="frame" x="155" y="49" width="205" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lemons ($2):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEo-Mu-1GW">
@@ -113,7 +104,7 @@
                                     <rect key="frame" x="188" y="170" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="buyLemonsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXX-uG-o9y"/>
+                                    <action selector="buyLemonsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3bW-WC-YYD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD1-pd-US1">
@@ -125,7 +116,7 @@
                                     <rect key="frame" x="286" y="170" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="sellLemonsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RwG-Ms-urw"/>
+                                    <action selector="sellLemonsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CMB-9h-2K9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JM-53-zVe">
@@ -144,7 +135,7 @@
                                     <rect key="frame" x="188" y="217" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="buyIceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sgL-R8-RHc"/>
+                                    <action selector="buyIceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zP4-zo-RIm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnO-ic-VQo">
@@ -156,7 +147,7 @@
                                     <rect key="frame" x="286" y="217" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="sellIceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ZN-rG-mAy"/>
+                                    <action selector="sellIceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ab-2m-eLO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9L-a4-niD">
@@ -166,7 +157,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="172" y="591" width="78" height="30"/>
+                                    <rect key="frame" x="131" y="550" width="78" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="startDayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G3q-iz-1Cn"/>
@@ -179,7 +170,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="76" y="433" width="308" height="111"/>
+                                    <rect key="frame" x="16" y="431" width="308" height="111"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do your customers perfer more lemons or more ice?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RK-KW-2jW">
@@ -188,7 +179,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="76" y="294" width="308" height="48"/>
+                                    <rect key="frame" x="16" y="294" width="308" height="48"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lemons:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7o-ke-96b">
@@ -225,7 +216,7 @@
                                     <rect key="frame" x="188" y="346" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="addLemonsToMixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IuI-8K-4Q4"/>
+                                    <action selector="addLemonsToMixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kA3-6C-F6G"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2f-Rb-G5O">
@@ -237,7 +228,7 @@
                                     <rect key="frame" x="286" y="346" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="removeLemonsFromMixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QOj-XH-tLo"/>
+                                    <action selector="removeLemonsFromMixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kDn-cY-sD5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8k-kw-fYM">
@@ -256,8 +247,7 @@
                                     <rect key="frame" x="188" y="393" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="addIceCubesToMixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QIH-e4-PoZ"/>
-                                    <action selector="addIceToMixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wYA-db-Cxg"/>
+                                    <action selector="addIceToMixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xyb-D0-QK9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fu-Vb-Foq">
@@ -269,9 +259,18 @@
                                     <rect key="frame" x="286" y="393" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="removeIceFromMixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EU3-gu-zU0"/>
+                                    <action selector="removeIceFromMixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hG8-vn-hdx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Ice Cube(s)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxW-Xj-Yfw">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="155" y="78" width="205" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -282,7 +281,6 @@
                                 <exclude reference="XRG-5O-RHP"/>
                                 <exclude reference="PUe-dI-DvP"/>
                                 <exclude reference="krW-DN-b9z"/>
-                                <exclude reference="yxW-Xj-Yfw"/>
                                 <exclude reference="ZEo-Mu-1GW"/>
                                 <exclude reference="YGu-7l-bex"/>
                                 <exclude reference="j8d-WI-f0v"/>
@@ -302,6 +300,7 @@
                                 <exclude reference="F8k-kw-fYM"/>
                                 <exclude reference="juI-cI-v8q"/>
                                 <exclude reference="7fu-Vb-Foq"/>
+                                <exclude reference="yxW-Xj-Yfw"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -312,7 +311,6 @@
                                 <include reference="XRG-5O-RHP"/>
                                 <include reference="PUe-dI-DvP"/>
                                 <include reference="krW-DN-b9z"/>
-                                <include reference="yxW-Xj-Yfw"/>
                                 <include reference="ZEo-Mu-1GW"/>
                                 <include reference="YGu-7l-bex"/>
                                 <include reference="j8d-WI-f0v"/>
@@ -332,16 +330,11 @@
                                 <include reference="F8k-kw-fYM"/>
                                 <include reference="juI-cI-v8q"/>
                                 <include reference="7fu-Vb-Foq"/>
+                                <include reference="yxW-Xj-Yfw"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="RemoveIceCubesFromMixButton" destination="7fu-Vb-Foq" id="2Cd-p6-ZMO"/>
-                        <outlet property="addIceCubesToMixButton" destination="juI-cI-v8q" id="5b4-81-Zjt"/>
-                        <outlet property="addLemonsToMixButton" destination="tfU-CZ-sp2" id="aLw-1r-v2E"/>
-                        <outlet property="buyIceButton" destination="9kc-Sg-rBy" id="9po-ob-8cF"/>
-                        <outlet property="buyIceCubesButton" destination="9kc-Sg-rBy" id="JTQ-HS-FGW"/>
-                        <outlet property="buyLemonsButton" destination="MH3-c9-87z" id="h60-e1-MmL"/>
                         <outlet property="fundsLabel" destination="PUe-dI-DvP" id="NNC-ke-bfV"/>
                         <outlet property="numberOfIceCubesLabel" destination="yxW-Xj-Yfw" id="KRE-Ub-oeG"/>
                         <outlet property="numberOfIceCubesToBuyLabel" destination="4JM-53-zVe" id="qnv-l6-2iv"/>
@@ -349,10 +342,6 @@
                         <outlet property="numberOfLemonsLabel" destination="krW-DN-b9z" id="Ijy-qr-Zkm"/>
                         <outlet property="numberOfLemonsToBuyLabel" destination="j8d-WI-f0v" id="Yuy-Vh-RKQ"/>
                         <outlet property="numberOfLemonsToMixLabel" destination="Oxs-ot-lE5" id="3mB-Rr-jjP"/>
-                        <outlet property="removeIceCubesFromMixButton" destination="7fu-Vb-Foq" id="XT4-mL-gdK"/>
-                        <outlet property="removeLemonsFromMixButton" destination="Q2f-Rb-G5O" id="whN-w9-chE"/>
-                        <outlet property="sellIceCubesButton" destination="LnO-ic-VQo" id="Jd2-5A-LrL"/>
-                        <outlet property="sellLemonsButton" destination="WD1-pd-US1" id="zg8-pU-Ix7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
