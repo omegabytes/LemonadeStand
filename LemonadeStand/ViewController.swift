@@ -18,10 +18,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberOfIceCubesToBuyLabel: UILabel!
     @IBOutlet weak var numberOfLemonsToMixLabel: UILabel!
     @IBOutlet weak var numberOfIceCubesToMixLabel: UILabel!
+    @IBOutlet weak var statusFieldLabel: UILabel!
 
     var funds = 10
     var lemons = Ingredient()
     var iceCubes = Ingredient()
+    var customer:[Customer] = []
     
     
     override func viewDidLoad() {
@@ -158,6 +160,14 @@ class ViewController: UIViewController {
         if lemons.mixAmount == 0 && iceCubes.mixAmount == 0 {
             showAlertWithText(header: "Unable to Start Day", message: "You have nothing to sell!")
         }
+        else {
+            var beverageRatio = self.drinkRatio(iceCubes.mixAmount, lemons: lemons.mixAmount)
+            customerGenerator()
+            var tastePreference = customerTasteProfile()
+            compareAndCalculate(tastePreference, lemonade: beverageRatio)
+            
+            
+        }
     }
     
     
@@ -169,15 +179,71 @@ class ViewController: UIViewController {
         self.presentViewController(alert, animated: true, completion: nil)
     }
     
+        func drinkRatio (ice : Int, lemons : Int) -> Double {
+        
+        var ratio = Double(lemons)/Double(ice)
+            println(ratio)
+        
+        return ratio
+    }
     
-//    func calculateCost(price: Double, amount: Double) -> Double {
-//        
-//        var totalCost = price * amount
-//        
-//        return totalCost
-//    }
+    func customerGenerator () {
+        let numberOfCustomers = Int(arc4random_uniform(UInt32(9)))
+        println("The number of customers is \(numberOfCustomers)")
+        
+//        for tasteIndex in customer {
+//            let tasteIndex = 1.0 / Double(arc4random_uniform(UInt32(9)))
+//        println("The taste index is \(tasteIndex)")
+//            
+//        }
+        
+        for var i = 0; i <= numberOfCustomers; i++ {
+        let tasteIndex = 1 / Double(arc4random_uniform(UInt32(9)))
+            
+            customer[i].tasteProfile = tasteIndex
+            println("The taste index is \(tasteIndex)")
+            
+        }
+
+        }
     
+    func customerTasteProfile () -> Double {
+        var customerPreference = 0.0
+        
+        for var j = 0; j < customer.count; j++ {
+            if customer[j].tasteProfile >= 0 && customer[j].tasteProfile < 0.4 {
+                var customerPreference = 0.9
+            }
+            else if customer[j].tasteProfile >= 0.4 && customer[j].tasteProfile < 0.6 {
+                var customerPreference = 1
+            }
+            else if customer[j].tasteProfile >= 0.6 && customer[j].tasteProfile <= 1 {
+                var customerPreference = 1.1
+            }
+        }
+        return customerPreference
+    }
+    
+    func compareAndCalculate (preference: Double, lemonade: Double) {
+        if (preference == 0.9 && lemonade > 1) || (preference == 1 && lemonade == 1) || (preference == 1.1 && lemonade < 1) {
+            statusFieldLabel.text = "Paid $1!"
+            funds += 1
+        }
+        else {
+            statusFieldLabel.text = "The customer wasn't satisfied."
+        }
+
+    }
     
 }
+
+
+
+
+
+
+
+
+
 
 
